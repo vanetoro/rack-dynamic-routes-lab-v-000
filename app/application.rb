@@ -10,6 +10,7 @@ class Application
 
     if  req.path.match(/items/)
       @@items.each do |item|
+        binding.pry
         resp.write "#{item.price}"
       end
       # binding.pry
