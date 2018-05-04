@@ -9,9 +9,11 @@ class Application
     req = Rack::Request.new(env)
 
     if  req.path.match(/items/)
-      item_search = req.params['item']
+      @@items.each do |item|
+        resp.write "#{item.price}"
+    
       binding.pry
-      resp.write "#{item_search.price}"
+      
     else
 
      resp.write "Route not found"
