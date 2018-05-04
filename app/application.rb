@@ -13,10 +13,7 @@ class Application
         binding.pry
         resp.write "#{item.price}"
       end
-      # binding.pry
-
     else
-
      resp.write "Route not found"
      resp.status = 404
    end
