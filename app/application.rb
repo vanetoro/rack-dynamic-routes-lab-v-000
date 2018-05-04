@@ -11,9 +11,9 @@ class Application
     if  req.path.match(/items/)
       @@items.each do |item|
         resp.write "#{item.price}"
-    
+
       binding.pry
-      
+
     else
 
      resp.write "Route not found"
