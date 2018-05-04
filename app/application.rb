@@ -8,4 +8,5 @@ end
 if req.path(/items/)
   resp.write 'Bad Route'
  req.status = 404
+ end
 end
