@@ -5,9 +5,9 @@ def call
 
 
 
-req.path.match(/items/)
+# req.path.match(/items/)
     resp.write 'Bad Route'
-   req.status = 404
+    req.status = 404
 
 end
 end
