@@ -9,7 +9,7 @@ if req.path.match(/items/)
 
 else
     resp.write 'Bad Route'
-    req.status = 404
+    req.status = 400
 
   end
   resp.finish
