@@ -10,7 +10,7 @@ class Application
 
     if  req.path.match(/items/)
       item_search = req.params['item']
-      resp.write "#{item.price}"
+      resp.write "#{item_search.price}"
     else
 
      resp.write "Route not found"
