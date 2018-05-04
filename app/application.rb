@@ -10,7 +10,8 @@ if req.path.match(/items/)
 else
     resp.write 'Bad Route'
     req.status = 404
-    resp.finish
+
   end
+  resp.finish
 end
 end
