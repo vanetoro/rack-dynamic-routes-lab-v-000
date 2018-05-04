@@ -10,6 +10,7 @@ class Application
 
     if  req.path.match(/items/)
       item_search = req.params['item']
+      binding.pry
       resp.write "#{item_search.price}"
     else
 
