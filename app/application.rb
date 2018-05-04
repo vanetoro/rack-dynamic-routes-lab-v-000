@@ -12,7 +12,7 @@ class Application
       item_search = req.params['items']
       resp.write "#{item.price}"
     else
-  #    
+  #
   #  else
     # binding.pry
      resp.write "Route not found"
